@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {  
+    font-family: "OpenSans"; 
+    src: url("../../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+@font-face {  
+    font-family: "Oswald-Regular"; 
+    src: url("../../fonts/Oswald/Oswald-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;  
+} 
+@font-face {  
+    font-family: "Oswald-Bold"; 
+    src: url("../../fonts/Oswald/Oswald-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: bold;  
+} 
+body {
+    background-color: rgb(51,51,51);
+    color:#fff;
+    font-family: "OpenSans";
+}
+.el_logo {
+    margin:20px;
+    margin-right:auto;
+    width:120px;
+    height:80px;
+    background-image: url("../../images/logo.png");    
+    background-repeat:no-repeat;
+    background-size: 120px 80px;
+    position:sticky;
+    top:0;
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.cart-container {
+  text-align: center;
+
+  margin: 0 auto;
+}
+.remove-item {
+  margin-bottom: 30px;
+}
+button {
+  background:#fff;;
+  border:2px solid #fff;
+  border-radius:50px;
+  padding:10px 20px;
+  color:#000;
+  font-weight:bold;
+  transition:0.3s;
+  cursor:pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #000;
+  color:#fff;
+}
+.buttons {
+  background:#000;
+  border:2px solid #fff;
+  border-radius:50px;
+  padding:10px 20px;
+  color:#fff;
+  font-weight:bold;
+  transition:0.3s;
+  cursor:pointer;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.buttons:hover {
+  background-color: #fff;
+  color:#000;
+}
+.total {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-item-price {
+  margin-bottom: 10px;
+}
+@media screen and (max-width:414px) {
+  .button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order {
+    margin-bottom: 20px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .buttons {
+    margin-left: 0;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer {
+    position: absolute;
+    height: 200px;
+    background-color: #1f1f1f;
+    border-radius: 20px 20px 0 0;
+    padding: 40px;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+  }
+  .el_a {
+    text-decoration: none;
+  }
+  .footer_ul {
+    color:#fff;
+    list-style:none;
+    font-size: 18px;
+  }
+  .footer_li {
+    color:#fff;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  .footer_li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  .footer_li:hover::after {
+    transform: scaleX(1);
+  }
+  .global_footer_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer_flex {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+  }
+  .footer_logo {
+    margin:20px;
+    /* margin-right: 200px; */
+    /* width:120px;
+    height:80px;
+    background-image: url("../../images/logo.png");
+    background-repeat:no-repeat;
+    background-size: 120px 80px;
+    position:sticky;
+    top:0;
+  }
+  .center_block {
+    display: flex;
+    margin: 0 auto;
+  }
+  .socials {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right:0;
+  }
+  .socials_images {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+  
+  }
+  .socials_images:nth-child(1) {
+    background-image: url('../../icons/discord.png');
+  }
+  .socials_images:nth-child(2) {
+    background-image: url('../../icons/vk.png');
+  }
+  .socials_images:nth-child(3) {
+    background-image: url('../../icons/youtube.png');
+  }
+  .socials_images:nth-child(4) {
+    background-image: url('../../icons/telegram.png');
+  }
+
+
+  @media screen and (min-width:1400px) and (max-width:1511px) {
+    .socials_images:nth-child(1) {
+      background-image: url('../../icons/discord-min.png');
+    }
+    .socials_images:nth-child(2) {
+      background-image: url('../../icons/vk-min.png');
+    }
+    .socials_images:nth-child(3) {
+      background-image: url('../../icons/youtube-min.png');
+    }
+    .socials_images:nth-child(4) {
+      background-image: url('../../icons/telegram-min.png');
+    }
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right:0;
+    }
+    .socials_images {
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      margin-right: 40px;
+      margin-bottom: 10px;
+    
+    }
+  }
+
+
+  @media screen and (min-width:1200px) and (max-width:1399px) {
+    footer {
+      position: relative;
+      height: 200px;
+      background-color: #1f1f1f;
+      border-radius: 20px 20px 0 0;
+      padding: 40px;
+      font-weight: bold;
+    }
+    .el_a {
+      text-decoration: none;
+    }
+    .footer_ul {
+      color:#fff;
+      list-style:none;
+    }
+  
+    .footer_li::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .footer_li:hover::after {
+      transform: scaleX(1);
+    }
+    .global_footer_flex {
+      display: flex;
+      flex-direction: row;
+    }
+    .footer_flex {
+      display: flex;
+      flex-direction: column;
+      margin-right: 100px;
+    }
+    .footer_logo {
+      margin:20px;
+      /* margin-right: 200px; */
+      /*width:120px;
+      height:80px;
+      background-image: url("../../images/logo.png");
+      background-repeat:no-repeat;
+      background-size: 120px 80px;
+      position:sticky;
+      top:0;
+    }
+    .center_block {
+      display: flex;
+    }
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      right:0;
+    }
+    
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right:0;
+    }
+  
+    .socials_images:nth-child(1) {
+      background-image: url('../../icons/discord-min.png');
+    }
+    .socials_images:nth-child(2) {
+      background-image: url('../../icons/vk-min.png');
+    }
+    .socials_images:nth-child(3) {
+      background-image: url('../../icons/youtube-min.png');
+    }
+    .socials_images:nth-child(4) {
+      background-image: url('../../icons/telegram-min.png');
+    }
+  
+    .socials_images {
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      margin-right: 40px;
+      margin-bottom: 10px;
+    
+    }
+    .footer_li {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width:960px) and (max-width:1199px) {
+    .global_footer_flex {
+      display: flex;
+      flex-direction: row;
+    }
+    .footer_flex {
+      display: flex;
+      flex-direction: column;
+      margin-right: 100px;
+    }
+    .footer_logo {
+      margin:20px;
+      /* margin-right: 200px; */
+      /*width:120px;
+      height:80px;
+      background-image: url("../../images/logo.png");
+      background-repeat:no-repeat;
+      background-size: 120px 80px;
+      position:sticky;
+      top:0;
+    }
+    .center_block {
+      display: flex;
+    }
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      right:0;
+    }
+    
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right:0;
+    }
+    
+    .socials_images:nth-child(1) {
+      background-image: url('../../icons/discord-min.png');
+    }
+    .socials_images:nth-child(2) {
+      background-image: url('../../icons/vk-min.png');
+    }
+    .socials_images:nth-child(3) {
+      background-image: url('../../icons/youtube-min.png');
+    }
+    .socials_images:nth-child(4) {
+      background-image: url('../../icons/telegram-min.png');
+    }
+    
+    .socials_images {
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      margin-right: 40px;
+      margin-bottom: 10px;
+    
+    }
+    .footer_li {
+      font-size: 12px;
+    }
+  }
+
+
+
+  @media screen and (min-width:860px) and (max-width:959px) {
+    footer {
+      font-weight: lighter;
+    }
+    .global_footer_flex {
+      display: flex;
+      flex-direction: row;
+    }
+    .footer_flex {
+      display: flex;
+      flex-direction: column;
+      margin-right: 100px;
+    }
+    .footer_logo {
+      margin:20px;
+      /* margin-right: 200px; */
+      /*width:130px;
+      height:70px;
+      background-image: url("../../images/logo.png");
+      background-repeat:no-repeat;
+      background-size: 100px 70px;
+      position:sticky;
+      top:0;
+    }
+    .center_block {
+      display: flex;
+    }
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      right:0;
+    }
+    
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right:0;
+    }
+    
+    .socials_images:nth-child(1) {
+      background-image: url('../../icons/discord-min.png');
+    }
+    .socials_images:nth-child(2) {
+      background-image: url('../../icons/vk-min.png');
+    }
+    .socials_images:nth-child(3) {
+      background-image: url('../../icons/youtube-min.png');
+    }
+    .socials_images:nth-child(4) {
+      background-image: url('../../icons/telegram-min.png');
+    }
+    
+    .socials_images {
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      margin-right: 40px;
+      margin-bottom: 10px;
+    
+    }
+    .footer_li {
+      font-size: 12px;
+    }
+  }
+
+
+
+  @media screen and (min-width:768px) and (max-width:859px) {
+
+    footer {
+      font-weight: lighter;
+    }
+    .global_footer_flex {
+      display: flex;
+      flex-direction: row;
+    }
+    .footer_flex {
+      display: flex;
+      flex-direction: column;
+      margin-right: 100px;
+    }
+    .footer_logo {
+      margin:20px;
+      /* margin-right: 200px; */
+      /*width:80px;
+      height:45px;
+      background-image: url("../../images/logo.png");
+      background-repeat:no-repeat;
+      background-size: 70px 45px;
+      position:sticky;
+      top:0;
+      display: none;
+    }
+    .center_block {
+      display: flex;
+    }
+    
+    
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right:0;
+    }
+    
+    .socials_images:nth-child(1) {
+      .socials_images:nth-child(1) {
+        background-image: url('../../icons/discord-min.png');
+      }
+      .socials_images:nth-child(2) {
+        background-image: url('../../icons/vk-min.png');
+      }
+      .socials_images:nth-child(3) {
+        background-image: url('../../icons/youtube-min.png');
+      }
+      .socials_images:nth-child(4) {
+        background-image: url('../../icons/telegram-min.png');
+      }
+    
+    .socials_images {
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      margin-right: 40px;
+      margin-bottom: 10px;
+    
+    }
+    .footer_li {
+      font-size: 12px;
+    }
+  }
+
+
+
+
+  @media screen and (min-width:600px) and (max-width:767px) {
+    footer {
+      font-weight: lighter;
+      height: 200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    
+    }
+    .global_footer_flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer_flex {
+      display: flex;
+      flex-direction: column;
+      margin-right: 100px;
+    }
+    .footer_logo {
+      margin:20px;
+      /* margin-right: 200px; */
+      /*width:80px;
+      height:45px;
+      background-image: url("../../images/logo.png");
+      background-repeat:no-repeat;
+      background-size: 70px 45px;
+      position:sticky;
+      top:0;
+      display: none;
+    }
+    .center_block {
+      display: flex;
+      margin-left: 50px;
+    }
+    
+    
+    .socials {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      bottom: 0;
+      justify-content: space-between;
+      left: 0;
+      margin-left: 50px;
+    }
+    
+    
+    .socials_images:nth-child(1) {
+      background-image: url('../../icons/discord-min.png');
+    }
+    .socials_images:nth-child(2) {
+      background-image: url('../../icons/vk-min.png');
+    }
+    .socials_images:nth-child(3) {
+      background-image: url('../../icons/youtube-min.png');
+    }
+    .socials_images:nth-child(4) {
+      background-image: url('../../icons/telegram-min.png');
+    }
+    
+    .socials_images {
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      margin-right: 50px;
+      margin-bottom: 10px;
+    
+    }
+    .footer_li {
+      font-size: 12px;
+    }
+
+  }
+
+
+
+  @media screen and (min-width:320px) and (max-width:599px) {
+
+  }
+
+ */

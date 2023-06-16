@@ -1,0 +1,16 @@
+/* 
+.password {
+	position: relative;
+}
+.password-control {
+	position: absolute;
+	top: 11px;
+	right: 6px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(/images/view_password.png) 0 0 no-repeat;
+}
+.password-control.view {
+	background: url(/images/hide_password.png) 0 0 no-repeat;
+} */

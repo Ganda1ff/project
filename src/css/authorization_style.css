@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {  
+    font-family: "OpenSans"; 
+    src: url("../../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+@font-face {  
+    font-family: "Oswald-Regular"; 
+    src: url("../../fonts/Oswald/Oswald-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;  
+} 
+@font-face {  
+    font-family: "Oswald-Bold"; 
+    src: url("../../fonts/Oswald/Oswald-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: bold;  
+} 
+
+body {
+    font-family:"OpenSans";
+    background: rgb(51,51,51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+  font-size:14px;
+  color:red;
+}
+a {
+  text-decoration: none;
+  color:#fff;
+  font-size: 16px;
+  border-radius: 50px;
+  border:2px solid #fff;
+  padding:12px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #000; 
+  transition: 0.3s;
+}
+a:hover {
+  background-color: #fff;
+  color: #000;
+ 
+}
+h1 {
+    color:#fff;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.login {
+    display: block;
+}
+.reg {
+    display: none;
+}
+.heading_block {
+    margin-bottom: 20px;
+}
+/* .reg_form input[type=file] {
+    
+} */
+.msg {
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+  .login_form {
+    width:400px;
+    top:0;
+    right:0;
+    margin-top:200px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .login_form button{
+    width:100%;
+    height:50px;
+    font-size:16px;
+    border-radius:50px;
+    background:transparent;
+    border:2px solid #fff;
+    border-radius:50px;
+    padding:10px 20px;
+    color:#fff;
+    font-weight:bold;
+    transition:0.3s;
+    cursor:pointer;
+    margin-bottom: 20px;
+  }
+  .login_form button:hover {
+    background:#fff;
+    color:#000;
+    transition:0.3s;
+  }
+  .login_input {
+    width:100%;
+    height:50px;
+    outline:none;
+    border-radius: 50px;
+    padding:10px 20px;
+    font-size:30x;
+    background-color: rgb(83, 83, 83);
+    border:2px solid rgb(206, 206, 206);
+    font-weight:bold;
+    color:#fff;
+    outline:none;
+    border-radius:50px;
+    transition:0.3s;
+    margin-bottom: 25px;
+  }
+  .login_input:focus {
+    background-color: #fff;
+    color:rgb(83, 83, 83);;
+  }
+  
+  .reg_form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height:100%;
+    top:0;
+    right:0;
+    margin-top:200px;
+    font-size: 20px;
+  }
+
+  .active {
+    display:block;
+  }
+  .disable {
+    display:none;
+  }
+  .reg_form button{
+    width:100%;
+    height:50px;
+    font-size:16px;
+    border-radius:50px;
+    background:transparent;
+    border:2px solid #fff;
+    border-radius:50px;
+    padding:10px 20px;
+    color:#fff;
+    font-weight:bold;
+    transition:0.3s;
+    cursor:pointer;
+    
+  }
+  .reg_form button:hover {
+    background:#fff;
+    color:#000;
+    transition:0.3s;
+  }
+  .reg_input {
+    height:50px;
+  }
+  .reg_form input{
+    width:100%;
+    outline:none;
+    border-radius: 50px;
+    padding:10px 20px;
+    font-size:30x;
+    background-color: rgb(83, 83, 83);
+    border:2px solid rgb(206, 206, 206);
+    font-weight:bold;
+    color:#fff;
+    outline:none;
+    border-radius:50px;
+    transition:0.3s;
+    margin-bottom: 25px;
+  }
+  .checkbox {
+    height: 20px;
+    border-radius: 0px;
+    border:2px solid rgb(206, 206, 206);
+    position: absolute;
+    left:0;
+    z-index:1;
+  }
+  .flex_check {
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:60px;
+    align-items:center;
+  }
+  .checkbox_text {
+    color:#fff;
+    font-size: 14px;
+    margin:0 auto;
+    z-index:2;
+    margin-top: 20px;
+  }
+  .reg_form input:focus {
+    background-color: #fff;
+    color:rgb(83, 83, 83);
+  }
+
+  @media screen and (min-width:420px) and (max-width:599px) {
+    .login_form {
+      width: 300px;
+    }
+    
+    .reg_form {
+      width: 300px;
+    }
+  }
+  @media screen and (min-width:320px) and (max-width:419px) {
+    .login_form {
+      width: 250px;
+    }
+  
+  .a_login {
+    font-size: 14px;
+  }
+  .reg_form {
+    width: 250px;
+  }
+  .reg_a {
+    font-size: 14px;
+  }
+}
